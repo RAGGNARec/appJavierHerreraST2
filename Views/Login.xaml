@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jherreraT2.Views.Login"
+             Title="Login">
+
+    <ContentPage.Resources>
+        <Style x:Key="estiloLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="TextColor" Value="Blue"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Spacing="25" Padding="20">
+
+        <Label 
+            Text="Inicio de Sesión"
+            FontSize="28"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Image Source="https://revista.uisrael.edu.ec/images/uisrael.png"
+               HeightRequest="100" />
+
+        <Entry x:Name="txtUsuario"
+               Placeholder="Usuario" />
+
+        <Entry x:Name="txtContrasena"
+               Placeholder="Contraseña"
+               IsPassword="True" />
+
+        <Button Text="Iniciar Sesión"
+                Clicked="btnIniciarSesion_Clicked"
+                BackgroundColor="#2196F3"
+                TextColor="White"
+                CornerRadius="10" />
+    </VerticalStackLayout>
+
+</ContentPage>
